@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <title>HTML Resume</title>
     <style>
+        table{
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+        .resume-main-table{
+            width: 100%;
+            border: 1px solid #DCDCDC;
+        }
         .left-side{
             background-color: #F5F5F5;
             padding: 20px 30px 20px 30px;
@@ -15,10 +23,28 @@
             width: 55%;
             vertical-align: top;
         }
+        .title-wraper{
+            border-bottom: 1px solid #CBCBCB;
+        }
+        .t-title{
+            color: #2F64A3;
+            font-size: 18px;
+        }
+        .t-img, .t-title{
+            display: inline-flex;
+        }
+        p{
+            color: #41505E;
+            padding: 15px 0px 0px 0px;
+        }
+        .p-dtl{
+            padding: 0px;
+            margin: 0px;
+        }
     </style>
 </head>
 <body>
-    <table>
+    <table class="resume-main-table">
         <tbody>
             <tr>
                 <!-----Left Side Personal Info----->
@@ -63,28 +89,28 @@
                                 <td>
                                     <table>
                                         <tbody>
-                                            <tr>
-                                                <td><img src="p-info.png" height="24" width="24" alt="Personal Info Image"/></td>
-                                                <td>
+                                            <tr class="title-wraper">
+                                                <td class="t-img"><img src="p-info.png"  alt="Personal Info Image"/></td>
+                                                <td class="t-title">
                                                     <h3>Personal Information</h3>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <p>Father's Name</p>
-                                                    <h4>XXXX XXXX</h4>
+                                                    <h4 class="p-dtl">XXXX XXXX</h4>
 
                                                     <p>Mother's Name</p>
-                                                    <h4>XXXX XXXX</h4>
+                                                    <h4 class="p-dtl">XXXX XXXX</h4>
 
                                                     <p>Gender</p>
-                                                    <h4>Male</h4>
+                                                    <h4 class="p-dtl">Male</h4>
 
                                                     <p>Date Of Birth</p>
-                                                    <h4>XX.XX.XX</h4>
+                                                    <h4 class="p-dtl">XX.XX.XX</h4>
 
                                                     <p>Nationality</p>
-                                                    <h4>Bangladeshi</h4>
+                                                    <h4 class="p-dtl">Bangladeshi</h4>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -103,9 +129,9 @@
                                 <td>
                                     <table>
                                         <tbody>
-                                            <tr>
-                                                <td><img src="Exp.png" height="24" width="24" alt="Images"/></td>
-                                                <td><h3>Experience (11 Year's)</h3></td>
+                                            <tr class="title-wraper">
+                                                <td class="t-img"><img src="Exp.png" height="24" width="24" alt="Images"/></td>
+                                                <td class="t-title"><h3>Experience (11 Year's)</h3></td>
                                             </tr>
                                             <tr>
                                                 <td>
@@ -131,9 +157,9 @@
                                     </table>
                                 </td>
                             </tr>
-                            <tr>
-                                <td><img src="skill-bc.png" height="24" width="24" alt="Images"/></td>
-                                <td><h3>Skill</h3></td>
+                            <tr class="title-wraper">
+                                <td class="t-img"><img src="skill-bc.png" height="24" width="24" alt="Images"/></td>
+                                <td class="t-title"><h3>Skill</h3></td>
                             </tr>
                             <tr>
                                 <td>
@@ -153,9 +179,9 @@
                                 <td>
                                     <table>
                                         <tbody>
-                                            <tr>
-                                                <td><img src="training.png" height="24" width="24" alt="Images"/></td>
-                                                <td><h3>Training Summary </h3></td>
+                                            <tr class="title-wraper">
+                                                <td class="t-img"><img src="training.png" height="24" width="24" alt="Images"/></td>
+                                                <td class="t-title"><h3>Training Summary </h3></td>
                                             </tr>
                                             <tr>
                                                 <td>
@@ -185,9 +211,9 @@
                                 <td>
                                     <table>
                                         <tbody>
-                                            <tr>
-                                                <td><img src="Edu-qua.png" height="24" width="24" alt="Images"/></td>
-                                                <td><h3>Educational Qualification</h3></td>
+                                            <tr class="title-wraper">
+                                                <td class="t-img"><img src="Edu-qua.png" height="24" width="24" alt="Images"/></td>
+                                                <td class="t-title"><h3>Educational Qualification</h3></td>
                                             </tr>
                                             <tr>
                                                 <td>
@@ -208,9 +234,9 @@
                                 <td>
                                     <table>
                                         <tbody>
-                                            <tr>
-                                                <td><img src="Referr.png" height="24" width="24" alt="Images"/></td>
-                                                <td><h3>Reference</h3></td>
+                                            <tr class="title-wraper">
+                                                <td class="t-img"><img src="Referr.png" height="24" width="24" alt="Images"/></td>
+                                                <td class="t-title"><h3>Reference</h3></td>
                                             </tr>
                                             <tr>
                                                 <td>
